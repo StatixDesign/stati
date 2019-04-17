@@ -1,0 +1,34 @@
+<head>
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>
+    {% if page.title %}{{ page.title | escape }} - {{ site.title | escape }}
+    {% else %}{{ site.title | escape }}{% endif %}
+  </title>
+
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{{"/assets/img/favicon.png" | relative_url }}" rel="icon">
+  <link href="{{"/assets/img/apple-touch-icon.png" | relative_url }}" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link rel="stylesheet" href="{{"/assets/vendor/bootstrap/css/bootstrap.min.css" | relative_url }}">
+
+   <!-- Libraries CSS Files -->
+  <link href="{{"/assets/vendor/font-awesome/css/font-awesome.min.css" | relative_url }}" rel="stylesheet"> 
+  <link href="{{"/assets/lib/animate/animate.min.css" | relative_url }}" rel="stylesheet">
+  <link href="{{"/assets/lib/ionicons/css/ionicons.min.css" | relative_url }}" rel="stylesheet">
+  <link href="{{"/assets/lib/owlcarousel/assets/owl.carousel.min.css" | relative_url }}" rel="stylesheet">
+  <link href="{{"/assets/lib/lightbox/css/lightbox.min.css" | relative_url }}" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{"/assets/main.css" | relative_url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+
+</head>
