@@ -23,10 +23,10 @@ layout: default
             {% endif %}
           </a>
           <p class="post-meta">Posted by
-            {% if post.author %}
-            {{ post.author }}
+            {% if post.author.name %}
+            {{ post.author.name }}
             {% else %}
-            {{ site.author }}
+            {{ site.author.name }}
             {% endif %}
             on
             {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}</p>
@@ -38,7 +38,7 @@ layout: default
 
         <!-- Pager -->
         <div class="clearfix">
-          <a class="btn btn-primary float-right" href="{{"/posts" | relative_url }}">View All Posts &rarr;</a>
+          <a class="btn btn-primary float-right" href="{{site.baseurl}}posts">View All Posts &rarr;</a>
         </div>
 
       </div>

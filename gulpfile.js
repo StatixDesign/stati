@@ -27,6 +27,12 @@ gulp.task('vendor', function(cb) {
   ])
   .pipe(gulp.dest('./assets/vendor/font-awesome/fonts'))
 
+  // baguetteBox Assets
+  gulp.src([
+    '../../node_modules/baguettebox.js/dist/**/*'
+  ])
+  .pipe(gulp.dest('./assets/vendor/baguettebox'))
+
   cb();
 
 });
