@@ -1,0 +1,33 @@
+.contact {
+    background: #ddd;
+
+    
+
+    form {
+        button {
+            background: #18d26e;
+            border: 0;
+            padding: 10px 30px;
+            color: #fff;
+            transition: 0.4s;
+            cursor: pointer;
+    
+            &:hover {
+                background: #13a456;
+            }
+        }
+    }
+    .card {
+        .card-body {
+            h4 {
+                padding: 20px 0 5px;
+                border-bottom: 1px solid $gray-800;
+                font-size: 16px;
+            }
+
+                font-size: 14px;
+
+        }
+    }
+
+}
